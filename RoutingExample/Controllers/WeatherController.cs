@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace RoutingExample.Controllers
 {
@@ -6,7 +7,7 @@ namespace RoutingExample.Controllers
     {
         public IActionResult Index()
         {
-            return Json(new { ControllerName = "Weather", ActionName = "Index" });
+            return Json(new { ControllerName = "Weather", ActionName = "Index", RouteParameter = new List<string>() { RouteData.Values["cityID"]?.ToString() } });
         }
     }
 }

@@ -55,7 +55,7 @@ namespace RoutingExample
 
                 endpoints.MapControllerRoute(
                     name: "havadurumu",
-                    pattern:"hava-durumu",
+                    pattern:"hava-durumu/{cityID}",
                     defaults: new {controller = "Weather", action = "Index" });
                 
                 endpoints.MapControllerRoute(
