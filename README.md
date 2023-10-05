@@ -5,4 +5,4 @@ Varsayılan Route, Özel Route Yapısı ve Route Data Yapısı <br />
 
 [![Video]()](https://www.youtube.com/embed/[dQw4w9WgXcQ](https://youtu.be/wMUkly2oz7o)https://youtu.be/wMUkly2oz7o)
 
-[![Video](https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)][(https://www.youtube.com/embed/dQw4w9WgXcQ)](https://youtu.be/vtrzQOi2Lg4)https://youtu.be/vtrzQOi2Lg4
+[![Video](https://learn.microsoft.com/tr-tr/aspnet/core/security/preventing-open-redirects/_static/open-redirection-attack-process.png?view=aspnetcore-7.0)](https://youtu.be/vtrzQOi2Lg4)
