@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RoutingExample.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,8 +56,22 @@ namespace RoutingExample
 
                 endpoints.MapControllerRoute(
                     name: "havadurumu",
-                    pattern:"hava-durumu/{cityID}",
-                    defaults: new {controller = "Weather", action = "Index" });
+                    pattern:"hava-durumu/{cityID?}",
+                    defaults: new {controller = "Weather", action = "Index" },
+                    constraints: new
+                    {
+                        cityID = new CustomConstraint()
+                    });
+
+                endpoints.MapControllerRoute(
+                    name: "Customers",
+                    pattern: "musteriler",
+                    defaults: new { controller = "Customer", aciton = "List" });
+
+                endpoints.MapControllerRoute(
+                    name: "Customer",
+                    pattern: "musteri/{id}",
+                    defaults: new { controller = "Customer", action = "Get" });
                 
                 endpoints.MapControllerRoute(
                     name: "default",

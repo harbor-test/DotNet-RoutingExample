@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<a href="@Url.RouteUrl("Default", new { Controller = "Home", Action = "Index"})">@Url.RouteUrl("Default", new { Controller = "Home", Action = "Index"})</a>
+<br />
+
+<a href="@Url.RouteUrl("Default")">@Url.RouteUrl("Default")</a>
+<br />
+
+<a href="@Url.RouteUrl("Customers")">@Url.RouteUrl("Customers")</a>
+<br />
+
+<a href="@Url.RouteUrl("Default", new { id = 5 })">@Url.RouteUrl("Default", new { id = 5 })</a>
+<br />
+
+<a href="@Url.RouteUrl("Default", new { Controller = "Customer", Action = "CustomerOrder", id = 7 })">@Url.RouteUrl("Default", new { Controller = "Customer", Action = "CustomerOrder", id = 7 })</a>
+<br />
